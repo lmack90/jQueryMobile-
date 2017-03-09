@@ -29,9 +29,9 @@ p {
 	font-size: 17px;
 }
 
-.main-header {
+.main-header .ui-header{
 	width: 100%;
-	background-image: url("../img/Assets/header.png");
+	background-image: url("assets/header.png");
 	/*background-color: #a20291;*/
 	color: #fff;
 	font-size: 20px;
@@ -41,12 +41,6 @@ p {
 	border-bottom: 4px solid #e2039e;
 }
 
-
-#pageone .ui-content img {
-	width: 50%;
-	height: 50%;
-	margin: 0 25%;
-}
 
 .main-content {
 	margin: 5px 20px 5px 20px;
