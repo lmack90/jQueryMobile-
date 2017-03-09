@@ -28,6 +28,7 @@ var quizMaster = (function () {
 	}
 
 	function displayQuiz(successCb) {
+		console.log("display quiz");
 
 		//We copy this out so our event can use it later. This feels wrong
 		successCbAlias = successCb;
@@ -145,4 +146,19 @@ var quizMaster = (function () {
 			}
 		}
 	};
+
 }());
+
+/* global $,document,console,quizMaster */
+$(document).ready(function() {
+	
+	$(document).on("pageshow", "#quiz", function() {
+		console.log("Page show");
+		//initialize the quiz
+		quizMaster.execute("js/q1.json", ".quizdisplay", function(result) {
+			console.log("SUCESS CB");
+			console.dir(result);	
+		});
+	});
+
+});
