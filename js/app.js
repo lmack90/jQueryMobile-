@@ -1,4 +1,3 @@
-
 /* Load splash screen */
 
 $(function() {
@@ -13,7 +12,7 @@ function hideSplash() {
 /* global $,document,console,quizMaster */
 $(document).ready(function() {
 	
-	$(document).on("pageshow", "#quizPage", function() {
+	$(document).on("pageshow", "#quiz", function() {
 		console.log("Page show");
 		//initialize the quiz
 		quizMaster.execute("q1.json", ".quizdisplay", function(result) {
