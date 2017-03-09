@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<style type="text/css" src="css/styles.css"></style>
+	</head>
+
+	<body>
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+		    <h1>Stereotypes</h1>
+		  </div>
+		    <ul data-role="listview">
+			    <li><a href="stereotypes.html">Stereotypes</a></li>
+			    <li><a href="#">Talent or Luck</a></li>
+			    <li><a href="#">Likeability</a></li>
+			    <li><a href="#">Moms at Work</a></li>
+			    <li><a href="#">Check Yourself</a></li>
+				<li><a href="#">Help Center</a></li>
+			</ul>
+		    <a href="#pagetwo">Go to Page Two</a>
+		  </div>
+
+		  
+		</div> 
+
+
+	</body>
+</html>
