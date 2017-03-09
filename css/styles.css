@@ -1,3 +1,202 @@
 .splash {
    align: center;
 }
+
+/* Intro Page */
+
+body {
+	background-color: #fff;
+	font-family: "helvetica";
+	margin: 0!important;
+}
+
+h1{
+	padding-top: 40px;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+p {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.main-content span {
+	font-style: italic;
+	font-size: 17px;
+}
+
+.main-header {
+	width: 100%;
+	background-image: url("../img/Assets/header.png");
+	/*background-color: #a20291;*/
+	color: #fff;
+	font-size: 20px;
+	padding-top: 3px;
+	text-align: center;
+	height: 140px;
+	border-bottom: 4px solid #e2039e;
+}
+
+
+#pageone .ui-content img {
+	width: 50%;
+	height: 50%;
+	margin: 0 25%;
+}
+
+.main-content {
+	margin: 5px 20px 5px 20px;
+}
+
+.main-content h2, .main-content p {
+	margin: 26px 0;
+	line-height: 25px;
+	border-left: 4px solid #e2039e;
+	padding: 0px 15px;
+}
+
+.main-content img {
+	width: 40%;
+	height: 100%;
+	margin: 0 30%;
+	padding: 8px;
+}
+
+.bar-footer {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-image: url("../img/Assets/footer.png");
+}
+
+.bar-footer button{
+	margin: 35% 32%;
+	border-radius: 100px;
+
+}
+
+.bar-footer button img {
+	height: 120px;
+}
+
+
+/* Stereotype Page */
+
+.accordion-text {
+	text-decoration: underline;
+	padding: 15px 0;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#text1, #text2 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 40px;
+	border-left: 4px solid #e2039e;
+	padding: 0px 15px;
+}
+
+.main-content li {
+	padding: 15px 0;
+	list-style: none;
+	font-size: 20px;
+}
+
+.numbered_bullets li{
+	list-style: decimal;
+}
+
+.main-content .names {
+	list-style: none;
+	font-size: 25px;
+	font-weight: bolder;
+
+}
+
+.main-content .hidden_text {
+	display: none;
+}
+
+.custom_btn{
+	width: 75%;
+	padding: 20px;
+	margin: auto;
+	background-color: #EC0A90;
+	color: #fff;
+	border-radius: 38px;
+}
+
+.custom_btn:hover{
+	background-color: #b1076c;
+	color: #fff;
+}
+
+.custom_btn:focus{
+	background-color: #b1076c;
+	color: #fff;
+	outline: none;
+}
+
+.custom_modals {
+	padding: 20px 0;
+}
+
+/* ----------------
+	sVG Animations
+---------------*/
+
+/* ---------------
+	Keyframes
+---------------*/
+
+@keyframes offset {
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fill-it {
+
+	100% {
+		fill: #000;
+	}
+}
+
+/* ---------------
+	SVG Styles
+---------------*/
+/*
+svg {
+
+	display: block;
+	margin: 2em auto 0;
+	width: 100%;
+}
+.outline {
+	stroke: #000;
+	stroke-width: .5;
+	stroke-dasharray: 550;
+	stroke-dashoffset: 550;
+
+	animation: offset 5s linear forwards,
+	fill-it 1s 2s forwards;
+
+	transform-origin: 50% 50%;
+	transition: transform .2s ease-out;
+}
+*/
+
+#outline-path {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+}
