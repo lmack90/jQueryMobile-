@@ -1377,7 +1377,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-footer {
-	height: 300px!important;
+	height: 100%!important;
 }
 
 
@@ -3774,7 +3774,8 @@ fieldset.ui-controlgroup {
 .ui-listview>.ui-li-has-thumb>.ui-btn,
 .ui-listview>.ui-li-static.ui-li-has-thumb {
     min-height: 3.625em;
-    padding-left: 6.25em
+    padding-left: 3em;
+    padding-right: 3em;
 }
 .ui-listview>.ui-li-has-icon>.ui-btn,
 .ui-listview>.ui-li-static.ui-li-has-icon {
