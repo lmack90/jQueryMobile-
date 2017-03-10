@@ -6,6 +6,11 @@
 
 /* Layout helpers
 ----------------------------------*/
+
+.ui-content {
+	background-color: #fab!important;
+}
+
 .ui-helper-hidden {
 	display: none;
 }

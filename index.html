@@ -2,7 +2,10 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="css/custom_theme.css"/>
+  		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
+  		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  		<!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
@@ -10,19 +13,19 @@
 	</head>
 
 	<body>
-		<div data-role="page" data-theme="b" id="splash" style="background-color: #fff;" > 
+		<div data-role="page" data-theme="a" id="splash" style="background-color: #fff;" > 
 		    <div class="splash">
 		        <img src="assets/splash_small.png" alt="splash" />
 		    </div>
 	    </div>
 
-		<div data-role="page" id="pageone">
-		  <div class="header" data-role="header">
+		<div id="pageone" data-role="page" data-theme="a">
+		  <div id="header" class="header" data-role="header">
 		    <h1>Welcome</h1>
 		  </div>
 
 
-		  <div data-role="main" class="ui-content" style="margin: 0 40px;">
+		  <div data-role="main" class="ui-content" data-theme="a" style="margin: 0 40px;">
 
 		  	<h2>Hi there.</h2>
             <p><b>It's me your PHLXXR- supplied mobile device.<b></b></b></p>

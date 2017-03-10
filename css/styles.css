@@ -25,6 +25,10 @@ p {
 	font-size: 20px;
 }
 
+#header .ui-header .ui-title {
+	font-size: 3em!important;
+}
+
 .main-content span {
 	font-style: italic;
 	font-size: 17px;
