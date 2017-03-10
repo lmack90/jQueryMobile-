@@ -38,6 +38,25 @@ div.ui-controlgroup-label {
 	font-weight: normal;
 	font-size: 16px;
 }
+
+/* Header and Footer
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
+    width: 100%;
+	background-image: url("../assets/header.png");
+	/*background-color: #a20291;*/
+	color: #fff!important;
+	font-size: 20px;
+	padding-top: 3px;
+	text-align: center;
+	height: 140px;
+	border-bottom: 4px solid #e2039e;
+}
 /* Separators
 -----------------------------------------------------------------------------------------------------------*/
 /* Field contain separator (< 28em) */
