@@ -6,11 +6,25 @@ $(function() {
 
 function hideSplash() {
   $.mobile.changePage("#pageone", "fade");
+  console.log("load splashscreen");
 }
 
+// Swipe Functions for page Navigation
 
-$("#stereo2").swipeleft(function() {
-    $.mobile.changePage("menu.html");
-    console.log("swiped");
+
+$(document).on("pagecreate","#stereo",function(){
+  $("body").on("swiperight",function(){
+  	$.mobile.changePage("menu.html");
+    console.log("You swiped menu!");
+
+  });                       
 });
+
+// $(document).on("pagecreate","#menu-page",function(){
+//   $("body").on("swiperight",function(){
+//   	$.mobile.changePage("index.html");
+//     console.log("You swiped to home!");
+
+//   });                       
+// });
 
