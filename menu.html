@@ -12,12 +12,13 @@
 	</head>
 
 	<body>
+		<audio id="demo" src="assets/audio/sampleAudio.mp3"></audio>
 		<div id="menu-page" data-role="page">
 		  <div data-role="header">
 		    <h1>Menu</h1>
 		  </div>
 		    <ul data-role="listview">
-			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn">Stereotypes<br><img src="assets/launch_button.svg"></a></li>
+			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn" onclick="document.getElementById('demo').play()">Stereotypes<br><img src="assets/launch_button.svg"></a></li>
 			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn">Talent or Luck<br><img src="assets/launch_button.svg"></a></li>
 			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn">Likeability<br><img src="assets/launch_button.svg"></a></li>
 			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn">Moms at Work<br><img src="assets/launch_button.svg"></a></li>
