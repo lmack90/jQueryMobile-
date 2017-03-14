@@ -32,15 +32,3 @@
 
 	</body>
 </html>
-
-<script>
-// Give the timeout enough time to avoid the race conflict.
-var waitTime = 150;
-
-setTimeout(function () {      
-  // Resume play if the element if is paused.
-  if (el.paused) {
-    el.play();
-  }
-}, waitTime);
-</script>
