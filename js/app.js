@@ -43,6 +43,7 @@ $(document).on("pagecreate","#video_sample",function(){
 
 // Give the timeout enough time to avoid the race conflict.
 var waitTime = 150;
+var el="";
 
 setTimeout(function () {      
   // Resume play if the element if is paused.
