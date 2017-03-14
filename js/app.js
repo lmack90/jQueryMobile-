@@ -100,11 +100,8 @@ $( document ).on( "pagecreate", function() {
 });
 
 
-// We start, as usual, with waiting for the page to be loaded with all the elements.  
-// After this, we set up our needed variables. We grab the questionArea, answerArea, 
-// the checker area (where our correct/false-div will be placed), 
-// create an object that will hold all our questions and answers. 
-// The last digit in the array (in allQuestions) is the correct answer.
+/******************** QUIZ ************************
+*****************************************************/
 
 window.onload = function () {
   
@@ -186,7 +183,7 @@ function checkAnswer(answer, questionArr) {
 	    addChecker(true);
 	    questionArea.innerHTML = 'Correct';
 	    $('#nextQuiz').removeClass('hidden');
-	    // answerArea.innerHTML ="";
+	    answerArea.innerHTML ="";
 	  } else {
 	    addChecker(false);
 	    questionArea.innerHTML = 'Try Again';
