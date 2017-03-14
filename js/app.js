@@ -9,6 +9,9 @@
 // }
 
 
+var audio_correct = new Audio('assets/audio/correct_feedback.mp3');
+var audio_incorrect = new Audio('assets/audio/incorrect_feedback.mp3');
+
 
 // Swipe Functions for page Navigation
 
@@ -101,7 +104,7 @@ $( document ).on( "pagecreate", function() {
 
 
 /******************** QUIZ ************************
-*****************************************************/
+****************************************************/
 
 window.onload = function () {
   
@@ -114,7 +117,12 @@ window.onload = function () {
      // In the array --> last digit gives the correct answer-position
       allQuestions = {
         'Where would you find the Empire State building?' : ['New York', 'Los Angeles', 'San Francisco', 'New Orleans', 'New York'],
+        // 'Where would you find the Eiffel Tower?' : ['Paris', 'Dublin', 'Madrid', 'New Orleans', 'Paris'],
       };
+
+      allQuestions2 = {
+      	'Where would you find the Eiffel Tower?' : ['Paris', 'Dublin', 'Madrid', 'New Orleans', 'Paris'],
+      }
 
 
 /////////////////////// Load Questions and Answer /////////////////////////
@@ -144,7 +152,9 @@ function loadAnswers() {
 
 
 //Make sure answer array is empty
+
 answerArea.innerHTML = "";
+
 //Add all the possible answers to the answerArea
 // By minusing the length the loop stops after 3 cycles
 
@@ -184,9 +194,11 @@ function checkAnswer(answer, questionArr) {
 	    questionArea.innerHTML = 'Correct';
 	    $('#nextQuiz').removeClass('hidden');
 	    answerArea.innerHTML ="";
+	    audio_correct.play();
 	  } else {
 	    addChecker(false);
 	    questionArea.innerHTML = 'Try Again';
+	    audio_incorrect.play();
 	  };
 
 	}

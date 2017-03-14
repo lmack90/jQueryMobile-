@@ -2,17 +2,24 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link rel="stylesheet" href="css/styles.css"/>
 		<link rel="stylesheet" href="css/custom_theme.min.css"/>
   		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
   		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  		<link type="text/css" href="skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" />
+
+
+
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
-		<style type="text/css" src="css/styles.css"></style>
+		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		
 	</head>
 
 	<body>
-		<audio id="demo" src="assets/audio/sampleAudio.mp3"></audio>
 		<div id="menu-page" data-role="page">
 		  <div data-role="header">
 		    <h1>Menu</h1>
@@ -25,12 +32,12 @@
 			    <li><a href="stereotypes.html" data-transition="slide" class="ui-btn" onclick="document.getElementById('demo').play()">Check Yourself<br><img src="assets/launch_button.svg"></a></li>
 				<li><a href="stereotypes.html" data-transition="slide" class="ui-btn" onclick="document.getElementById('demo').play()">Help Center<br><img src="assets/launch_button.svg"></a></li>
 			</ul>
-		    <a href="index.html">Go to Intro</a>
+		    <a href="index.html" rel="external">Go to Intro</a>
+		    <audio id="demo" src="assets/audio/sampleAudio.mp3"></audio>
 		  </div>
 
 		  
 		</div> 
-
 
 	</body>
 </html>

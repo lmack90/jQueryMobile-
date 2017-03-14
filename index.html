@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/custom_theme.min.css"/>
   		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
   		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  		<link type="text/css" href="/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" />
   		<!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -58,11 +59,11 @@
             <p>We also have a Help Center to answer any question any questions you may have down the line.</p>
         </div>
         <div class="ui-block-b">
-            <img src="assets/Help_center.svg" style="height: 40%; width: 40%; margin: 0 30%;">
+            <img src="assets/Help_center.svg" style="height: 60%; width: 60%; margin: 0 30%;">
         </div>
         <div class="ui-block-a"> 
 
-            <p>For this refresher, you'll need two things: me and your thumb. You might occasionally need another digit, too.<br>To get around, swipe down.<br><span>(I know you’re used to swiping right for the good stuff, but I promise if you swipe down, it'll be worth your while.)</span></p>
+            <p>For this refresher, you'll need two things: me and your thumb. You might occasionally need another digit, too.<br>To get around, swipe down.<br><span>(I know you're used to swiping right for the good stuff, but I promise if you swipe down, it'll be worth your while.)</span></p>
 
             <p>Feel free to take these lessons in any order. You might even want to do them in the order of most to least familiar. When you're done, you'll answer a few final questions in Check Yourself. <br><span>(Not that I'm implying you're about to wreck yourself.)</span></p>
 
@@ -70,7 +71,7 @@
         </div>
         <div class="ui-block-b"> 
 
-            <img src="assets/wifi.svg" style="height: 20%; width: 20%; margin: 0 40%;">
+            <img src="assets/wifi.svg" style="height: 40%; width: 40%; margin: 0 30%;">
         </div>
 
         <div class="ui-block-a"> 
@@ -82,10 +83,12 @@
 		    
 		</div>
 
-		  <div data-role="footer">
-		    <a href="menu.html" data-role="button" data-transition="slideup">Start</a>
-		  </div>
+		  
 		</div> 
+		<div data-role="footer">
+		    <a href="menu.html" data-role="button" data-transition="slideup" onclick="document.getElementById('swoosh').play()">Start</a>
+		    <audio id="swoosh" src="http://www.freesfx.co.uk/rx2/mp3s/6/18028_1464273827.mp3"></audio>
+		 </div>
 
 	</body>
 </html>
