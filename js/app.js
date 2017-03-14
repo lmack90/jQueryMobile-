@@ -1,12 +1,12 @@
 /* Load splash screen */
 
-$(function() {
-  setTimeout(hideSplash, 2000);
-});
+// $(function() {
+//   setTimeout(hideSplash, 2000);
+// });
 
-function hideSplash() {
-  $.mobile.changePage("#pageone", "fade");
-}
+// function hideSplash() {
+//   $.mobile.changePage("#pageone", "fade");
+// }
 
 
 
@@ -40,6 +40,16 @@ $(document).on("pagecreate","#video_sample",function(){
 
 /**************************** VIDEO *******************************
 *********************************************************************/
+
+// Give the timeout enough time to avoid the race conflict.
+var waitTime = 150;
+
+setTimeout(function () {      
+  // Resume play if the element if is paused.
+  if (el.paused) {
+    el.play();
+  }
+}, waitTime);
 
 // popup examples
 $( document ).on( "pagecreate", function() {
@@ -87,3 +97,4 @@ $( document ).on( "pagecreate", function() {
         }
     });
 });
+

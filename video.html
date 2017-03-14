@@ -19,7 +19,7 @@
 
 		 <a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch video player</a>
 			<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-			    <iframe src="http://player.vimeo.com/video/41135183?portrait=0" width="497" height="298" seamless=""></iframe>
+			    <iframe src="https://player.vimeo.com/video/41135183?portrait=0" width="497" height="298" seamless="" controls=""></iframe>
 			</div>
 
 
@@ -32,3 +32,15 @@
 
 	</body>
 </html>
+
+<script>
+// Give the timeout enough time to avoid the race conflict.
+var waitTime = 150;
+
+setTimeout(function () {      
+  // Resume play if the element if is paused.
+  if (el.paused) {
+    el.play();
+  }
+}, waitTime);
+</script>
