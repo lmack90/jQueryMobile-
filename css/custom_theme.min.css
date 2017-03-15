@@ -137,8 +137,9 @@ label.ui-btn {
 }
 
 .ui-listview>.ui-li-has-thumb>.ui-btn {
-	padding-left:3em!important;
-	padding-right: 3em!important;
+	margin: 0 auto;
+	padding-left:10%!important;
+	padding-right: 10%!important;
 }
 /* Corner rounding
 -----------------------------------------------------------------------------------------------------------*/
